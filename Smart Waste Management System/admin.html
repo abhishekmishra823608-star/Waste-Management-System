@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h2>Admin Login</h2>
+
+<form id="adminLogin">
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button type="submit">Login</button>
+
+</form>
+
+<script>
+
+document.getElementById("adminLogin").addEventListener("submit",function(e){
+
+e.preventDefault()
+
+let user=document.getElementById("username").value
+let pass=document.getElementById("password").value
+
+if(user==="admin" && pass==="1234")
+{
+window.location="dashboard.html"
+}
+else
+{
+alert("Invalid login")
+}
+
+})
+
+</script>
+
+</body>
+</html>
